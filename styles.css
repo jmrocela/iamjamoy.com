@@ -42,11 +42,11 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 	#me h5 { font-size: 18px; }
 	#me a { color: #ffffff; text-decoration: none; }
 		#me a:hover { text-decoration: underline; }
-#social { padding: 60px 0; }
+#social { padding: 60px 0 30px; }
 	#social #icons { width: 300px; margin: 0 AUTO; }
 	#social #icons a { display: block; float: left; height: 55px; width: 55px; margin: 0 10px; background: url('images/social-icons.png') no-repeat top center scroll; }
 	#social #icons:after { clear: both; display: block; content: ""; }
-#products { background: #272727; }
+#products { background: #272727; margin: 40px 0; }
 	#concerto .logo { float: left; background: #272727 url('images/concerto.jpg') no-repeat top center scroll; height: 75px; width: 257px; margin: 25px 0 0 20px; }
 	#concerto .desc { float: left; width: 400px; font-size: 20px; margin: 32px 0 0 30px; text-align: center; }
 		#concerto .desc a { color: #ffffff; text-decoration: none; }
@@ -55,7 +55,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 	#products .product:after { clear: both; display: block; content: ""; }
 #about {  font-size: 18px; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); }
 	#about .wrapper { margin: 0 AUTO; }
-	#about .padding { margin: 40px 20px 70px; }
+	#about .padding { margin: 0 20px 40px; }
 	#about #aboutme { float: left; width: 500px; }
 	#about #skillsandbelief { float: right; width: 300px; }
 	#about #ps { clear: both; text-align: center; font-size: 30px; padding-top: 50px; }
@@ -81,12 +81,25 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		#contact p { font-size: 18px; }
 			#contact p a { color: #ffffff; text-decoration: none; }
 			#contact p a:hover { text-decoration: underline; }
+		#contact #form { margin-top: 20px; }
+			#contact #form p { margin: 10px 0; }
+		#contact #form #labels { float: left; width: 90px; margin-right: 20px; text-align: right; font-family: Delicious, georgia, helvetica, arial; }
+			#contact #form #labels label { font-size: 24px; display: block; margin-top: 22px; }
+		#contact #form #input { float: left; }
+			#contact #form #input input { color: #ababab; font-size: 24px; padding: 5px; width: 400px; border: 1px solid #ababab; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; }
+			#contact #form #input #porijosdnakjrblksajiu { width: 320px; }
+			#contact #form #input textarea { color: #ababab; font-family: arial; font-size: 24px; padding: 5px; width: 798px; height: 300px; border: 1px solid #ababab; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; resize: none; }
+			#contact #form #input input:focus, #contact #form #input textarea:focus {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; }
+			#contact #form #input #neiowubsndiufbyaw { margin-right: 10px; width: 90px; padding: 10px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: DeliciousBold, Delicious, georgia, helvetica, arial; font-size: 24px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
+		#contact #form:after { clear: both; display: block; content: ""; }
 #footer { background: #868686 url('images/footerglow.jpg') repeat-x bottom left scroll; font-family: arial; border-top: 1px solid #e5e5e5; }
-	#footer .wrapper {  }
 	#copyright { padding: 20px 0; text-align: center; color: #7e8388; font-size: 11px; }
 		#copyright a { color: #7e8388; text-decoration: none; }
 	#iamjamoyfooter { display: block; background: url('images/iamjamoy.footer.png') repeat top left scroll; width: 111px; height: 15px; margin: 0 AUTO 10px; }
 	#codepassivefooter { display: block; background: url('images/codepassive.footer.png') repeat top left scroll; width: 108px; height: 20px; margin: 0 AUTO 40px; }
+	#footer #stuff { margin: 30px 0 50px; }
+		#footer #stuff .column { float: left; width: 300px; margin-left: 20px; }
+			#footer #stuff h3 { font-size: 30px; color: #ffffff; font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -2px 0 rgba(0,0,0,0.3); }
 
 
 

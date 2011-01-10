@@ -28,7 +28,7 @@
 			<div class="wrapper">
 				<div id="icons">
 					<a href="http://twitter.com/jmrocela" title="@jmrocela"></a>
-					<a href="http://facebook.com/jmrocela" title="be a friend :)"></a>
+					<a href="http://facebook.com/jmrocela" title="LinkedIn profile"></a>
 					<a href="http://github.com/jmrocela/" title="my open source projects"></a>
 					<a href="http://blog.iamjamoy.com/" title="subscribe to my blog"></a>
 				</div>
@@ -86,7 +86,7 @@
 							<li>Innovative</li>
 						</ul>
 					</div>
-					<div id="ps">"I also own CodePassive."</div>
+					<div id="ps">"I develop web apps on CodePassive."</div>
 				</div>
 			</div>
 		</div>
@@ -127,12 +127,41 @@
 				<div class="padding">
 					<h3>Contact Me</h3>
 					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive’s contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, or alternatively, you can reach me here via the awesome contact form below.</p>
+					<div id="form">
+						<form method="POST">
+						<div style="display:none;"><input type="text" name="name" /><input type="text" name="email" /><textarea name="message"></textarea></div>
+						<div id="labels">
+							<p><label for="moinaushdtlawjkdsf">Name</label></p>
+							<p><label for="porijosdnakjrblksajiu">Email</label></p>
+							<p><label for="cvoihryoncoxirypweo">Message</label></p>
+						</div>
+						<div id="input">
+							<p><input type="text" name="moginurwnidubsklifb" id="moinaushdtlawjkdsf"/></p>
+							<p><input type="text" name="oijpowighsadojngrlkj" id="porijosdnakjrblksajiu"/></p>
+							<p><textarea name="zxciowentpodsdpg" id="cvoihryoncoxirypweo"></textarea></p>
+							<p class="right">Your Email will be kept safe. don’t worry.</p>
+							<input type="submit" value="send" id="neiowubsndiufbyaw" />
+						</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="footer">
 			<div class="wrapper">
 				<div class="padding">
+					<div id="stuff">
+						<div class="column">
+							<h3>Blog</h3>
+						</div>
+						<div class="column">
+							<h3>News</h3>
+						</div>
+						<div class="column">
+							<h3>Tweets</h3>
+						</div>
+						<div class="clear"></div>
+					</div>
 					<div id="copyright">
 						<a href="#" id="iamjamoyfooter"></a>
 						<a href="#" id="codepassivefooter"></a>
