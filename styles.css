@@ -75,7 +75,9 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 				.project .desc { display: none; position:relative;width:300px;background:#272727; }
 					.project .desc div { padding: 10px; font-size: 11px; font-family: arial; }
 		h4#postprojects { color: #bababa; text-align: center; margin-top: 50px; }
-#contact { border-top: 1px solid #eeeeee; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); }
+			h4#postprojects a { color: #bababa; text-decoration: none; }
+			h4#postprojects a:hover { text-decoration: underline; }
+#contact { border-top: 1px solid #eeeeee; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); border-bottom: 1px solid #dadada; }
 	#contact .padding { padding: 50px 20px; }
 		#contact h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-bottom: 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
 		#contact p { font-size: 18px; }
@@ -92,14 +94,21 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 			#contact #form #input input:focus, #contact #form #input textarea:focus {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; }
 			#contact #form #input #neiowubsndiufbyaw { margin-right: 10px; width: 90px; padding: 10px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: DeliciousBold, Delicious, georgia, helvetica, arial; font-size: 24px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
 		#contact #form:after { clear: both; display: block; content: ""; }
-#footer { background: #868686 url('images/footerglow.jpg') repeat-x bottom left scroll; font-family: arial; border-top: 1px solid #e5e5e5; }
-	#copyright { padding: 20px 0; text-align: center; color: #7e8388; font-size: 11px; }
+#footer { background: #868686 url('images/footerglow.jpg') repeat-x bottom left scroll; font-family: arial; border-top: 1px solid #444444; }
+	#footer .padding { padding: 20px; }
+	#footer #copyright { padding: 10px 0; text-align: center; color: #7e8388; font-size: 11px; }
+		#copyright #love { background: url('images/heart.png') no-repeat center right scroll; padding-right: 14px; margin: 0 AUTO; width: 144px;}
 		#copyright a { color: #7e8388; text-decoration: none; }
+		#copyright a:hover { text-decoration: underline; }
 	#iamjamoyfooter { display: block; background: url('images/iamjamoy.footer.png') repeat top left scroll; width: 111px; height: 15px; margin: 0 AUTO 10px; }
-	#codepassivefooter { display: block; background: url('images/codepassive.footer.png') repeat top left scroll; width: 108px; height: 20px; margin: 0 AUTO 40px; }
-	#footer #stuff { margin: 30px 0 50px; }
-		#footer #stuff .column { float: left; width: 300px; margin-left: 20px; }
-			#footer #stuff h3 { font-size: 30px; color: #ffffff; font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -2px 0 rgba(0,0,0,0.3); }
+	#codepassivefooter { display: block; background: url('images/codepassive.footer.png') repeat top left scroll; width: 108px; height: 20px; margin: 0 AUTO 20px; }
+	#footer #copyright:after { clear: both; display: block; content: ""; }
+	#footer #stuff { float: right; margin: 10px AUTO; text-align: right; }
+		#footer #stuff h3 { font-size: 30px; color: #ffffff; font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -2px 0 rgba(0,0,0,0.3); }
+		#footer #stuff  ul { margin: 10px 0; }
+		#footer #stuff li { padding-bottom: 5px; }
+		#footer #stuff li a { font-size: 16px; color: #242424; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 rgba(255,255,255,0.2); }
+		#footer #stuff li a:hover { color: #00aeef; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
 
 
 

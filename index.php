@@ -1,3 +1,8 @@
+<?php
+if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_POST["zxciowentpodsdpg"]) {
+	die();
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -118,7 +123,7 @@
 						
 						<div class="clear"></div>
 					</div>
-					<h4 id="postprojects">Contact me below if you are interested in working with me.</h4>
+					<h4 id="postprojects">for my open source programming projects, visit my <a href="http://github.com/jmrocela">github</a> repository.</h4>
 				</div>
 			</div>
 		</div>
@@ -126,7 +131,7 @@
 			<div class="wrapper">
 				<div class="padding">
 					<h3>Contact Me</h3>
-					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive’s contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, or alternatively, you can reach me here via the awesome contact form below.</p>
+					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive’s contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, alternatively, you can reach me via the awesome contact form below.</p>
 					<div id="form">
 						<form method="POST">
 						<div style="display:none;"><input type="text" name="name" /><input type="text" name="email" /><textarea name="message"></textarea></div>
@@ -150,24 +155,25 @@
 		<div id="footer">
 			<div class="wrapper">
 				<div class="padding">
-					<div id="stuff">
-						<div class="column">
-							<h3>Blog</h3>
-						</div>
-						<div class="column">
-							<h3>News</h3>
-						</div>
-						<div class="column">
-							<h3>Tweets</h3>
-						</div>
-						<div class="clear"></div>
-					</div>
+					<!--div id="stuff">
+						<h3>Blog</h3>
+						<ul>
+							<li><a href="#">Lorem Ipsum dolor sit amet</a></li>
+							<li><a href="#">SM Supermalls</a></li>
+							<li><a href="#">Piwi micro framework</a></li>
+							<li><a href="#">Concerto alpha</a></li>
+							<li><a href="#">A New Year, New Life, New Goals</a></li>
+							<li><a href="#">iamjamoy v2</a></li>
+						</ul>
+					</div-->
 					<div id="copyright">
 						<a href="#" id="iamjamoyfooter"></a>
 						<a href="#" id="codepassivefooter"></a>
 						<p>copyright &#0169; 2011. hosted at <strong><a href="http://www.mediatemple.net/">(mt)</a></strong></p>
-						<p>made with html5 &amp; css3 love.</p>
+						<p id="love">made with html5 &amp; css3 love</p>
+						<p><br/>This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/jmrocela/iamjamoy.com" rel="dct:source">github.com</a>.</p>
 					</div>
+						<div class="clear"></div>
 				</div>
 			</div>
 		</div>
