@@ -1,6 +1,17 @@
 <?php
-if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_POST["zxciowentpodsdpg"]) {
-	die();
+session_start();
+$_SESSION['nonces'] = array();
+	
+if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_POST["zxciowentpodsdpg"] AND @$_POST['_nonce']) {
+	if (verify_nonce($_POST['_nonce'])) {
+		$to = 'me@iamjamoy.com';
+		$subject = 'You have been contact by ' . strip_tags($_POST["moginurwnidubsklifb"]); . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
+		$message = strip_tages($_POST["zxciowentpodsdpg"]);
+		$headers = 'From: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
+						 'Reply-To: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
+						 'X-Mailer: PHP/' . phpversion();
+		mail($to, $subject, $message, $headers);
+	}
 }
 ?>
 <!DOCTYPE html>
@@ -134,6 +145,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive’s contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, alternatively, you can reach me via the awesome contact form below.</p>
 					<div id="form">
 						<form method="POST">
+						<input type="hidden" value="<?php echo nonce(); ?>" name="_nonce" />
 						<div style="display:none;"><input type="text" name="name" /><input type="text" name="email" /><textarea name="message"></textarea></div>
 						<div id="labels">
 							<p><label for="moinaushdtlawjkdsf">Name</label></p>
@@ -155,17 +167,6 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 		<div id="footer">
 			<div class="wrapper">
 				<div class="padding">
-					<!--div id="stuff">
-						<h3>Blog</h3>
-						<ul>
-							<li><a href="#">Lorem Ipsum dolor sit amet</a></li>
-							<li><a href="#">SM Supermalls</a></li>
-							<li><a href="#">Piwi micro framework</a></li>
-							<li><a href="#">Concerto alpha</a></li>
-							<li><a href="#">A New Year, New Life, New Goals</a></li>
-							<li><a href="#">iamjamoy v2</a></li>
-						</ul>
-					</div-->
 					<div id="copyright">
 						<a href="#" id="iamjamoyfooter"></a>
 						<a href="#" id="codepassivefooter"></a>
@@ -173,7 +174,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						<p id="love">made with html5 &amp; css3 love</p>
 						<p><br/>This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/jmrocela/iamjamoy.com" rel="dct:source">github.com</a>.</p>
 					</div>
-						<div class="clear"></div>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
@@ -197,3 +198,18 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	</script>
 </body>
 </html>
+<?php
+// Simple nonce implementation
+function nonce($salt = 'thisisarandomsalt') {
+	$_SESSION['nonce'] = (isset($_SESSION['nonce'])) ? $_SESSION['nonce']: sha1(time() . $salt);
+	return $_SESSION['nonce'];
+}
+
+function verify_nonce($nonce) {
+	if ($nonce == $_SESSION['nonce']) {
+		unset($_SESSION['nonce']);
+		return true;
+	}
+	return false;
+}
+?>
