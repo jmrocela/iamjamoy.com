@@ -40,7 +40,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						I help people make <a href="javascript:;" class="scrolltoportfolio">beautiful websites</a>, functional applications<br/>
 						and <a href="http://themeconcert.com/">seamless user experiences</a>.
 					</h2>
-					<h5>I also <a href="http://blog.iamjamoy.com/">write random stuff</a> about what I’m interested in.</h5>
+					<h5>I also <a href="http://blog.iamjamoy.com/">write random stuff</a> about what I'm interested in.</h5>
 				</div>
 			</div>
 		</div>
@@ -146,7 +146,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 			<div class="wrapper">
 				<div class="padding">
 					<h3>Contact Me</h3>
-					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive’s contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, alternatively, you can reach me via the awesome contact form below.</p>
+					<p>you can contact me by my public email <em><a href="mailto:me@iamjamoy.com">me@iamjamoy.com</a></em> or CodePassive's contact email <em><a href="mailto:hello@codepassive.com">hello@codepassive.com</a></em>, alternatively, you can reach me via the awesome contact form below.</p>
 					<div id="form">
 						<form method="POST">
 						<input type="hidden" value="<?php echo nonce(); ?>" name="_nonce" />
@@ -160,7 +160,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 							<p><input type="text" name="moginurwnidubsklifb" id="moinaushdtlawjkdsf"/></p>
 							<p><input type="text" name="oijpowighsadojngrlkj" id="porijosdnakjrblksajiu"/></p>
 							<p><textarea name="zxciowentpodsdpg" id="cvoihryoncoxirypweo"></textarea></p>
-							<p class="right">Your Email will not be stored and will be kept safe. don’t worry.</p>
+							<p class="right">Your Email will not be stored and will be kept safe. don't worry.</p>
 							<input type="submit" value="send" id="neiowubsndiufbyaw" />
 						</div>
 						</form>
