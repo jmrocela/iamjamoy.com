@@ -29,7 +29,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	<div id="container">
 		<div id="bar">
 			<div class="wrapper">
-				<div id="codepassive"><a href="http://codepassive.com/?ref=iamjamoy" title="CodePassive"><img src="images/codepassive.logo.png" alt="" border="0" /></a></div>
+				<div id="codepassive"><a href="http://codepassive.com/?ref=iamjamoy" title="CodePassive"><img src="images/codepassive.logo.png" alt="" /></a></div>
 			</div>
 		</div>
 		<div id="me">
@@ -60,7 +60,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 				<div id="concerto" class="product">
 					<a href="http://themeconcert.com/concerto" class="logo"></a>
 					<div class="desc"><a href="http://themeconcert.com/concerto">Concerto is a Fresh &amp; New Premium Wordpress Theme Framework for everyone.</a></div>
-					<div class="wordpress outofthebox"><a href="http://wordpress.com/"><img src="images/wordpress.png" alt="Wordpress" border="0" /></a></div>
+					<div class="wordpress outofthebox"><a href="http://wordpress.com/"><img src="images/wordpress.png" alt="Wordpress" /></a></div>
 				</div>
 			</div>
 		</div>
@@ -117,25 +117,25 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 					<h3>Portfolio</h3>
 					<h4>Web</h4>
 					<div class="projects">
-						<div class="project"><div class="desc"><div>Soshified Philippines - a Philippine Fansite for Girls' Generation</div></div><a href="http://soshified.ph/" target="_blank"><img src="images/projects/soshifiedph.jpg" border="0" alt=""/></a></div>
-						<div class="project"><div class="desc"><div>Skullcandy - Perfect company for your music</div></div><a href="http://skullcandy.com/" target="_blank"><img src="images/projects/skullcandy.jpg" border="0" alt=""/></a></div>
-						<div class="project"><div class="desc"><div>iamjamoy - old version for iamjamoy.com</div></div><a href="http://iamjamoy.com/" target="_blank"><img src="images/projects/iamjamoy.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Soshified Philippines - a Philippine Fansite for Girls' Generation</div></div><a href="http://soshified.ph/" target="_blank"><img src="images/projects/soshifiedph.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Skullcandy - Perfect company for your music</div></div><a href="http://skullcandy.com/" target="_blank"><img src="images/projects/skullcandy.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>iamjamoy - old version for iamjamoy.com</div></div><a href="http://iamjamoy.com/" target="_blank"><img src="images/projects/iamjamoy.jpg" alt=""/></a></div>
 
-						<div class="project"><div class="desc"><div>Sgamingx - Forum for a Gaming Guild</div></div><a href="http://sgamingx.com/" target="_blank"><img src="images/projects/sgamingx.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>Sgamingx beta - proposed design for Sgamingx</div></div><a href="http://beta.sgamingx.com/" target="_blank"><img src="images/projects/sgxbeta.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>Activeo - Magento hosting and development</div></div><a href="http://activo.com/" target="_blank"><img src="images/projects/activo.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Sgamingx - Forum for a Gaming Guild</div></div><a href="http://sgamingx.com/" target="_blank"><img src="images/projects/sgamingx.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Sgamingx beta - proposed design for Sgamingx</div></div><a href="http://beta.sgamingx.com/" target="_blank"><img src="images/projects/sgxbeta.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Activeo - Magento hosting and development</div></div><a href="http://activo.com/" target="_blank"><img src="images/projects/activo.jpg" alt=""/></a></div>
 
-						<div class="project"><div class="desc"><div>Black and White - Thesis Wordpress theme</div></div><a href="http://thesisdoctor.com/skins/blackandwhite/" target="_blank"><img src="images/projects/blackandwhite.jpg" border="0" alt=""/></a></div>
-						<div class="project"><div class="desc"><div>Site design for Brendan Wenzel - made with Thesis on Wordpress</div></div><a href="http://brendanwenzel.net/" target="_blank"><img src="images/projects/brendanwenzel.jpg" border="0" alt=""/></a></div>
-						<div class="project"><div class="desc"><div>Costaricaunplugged site design - made with Thesis on Wordpress</div></div><a href="http://costaricaunplugged.com/" target="_blank"><img src="images/projects/costaricaunplugged.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Black and White - Thesis Wordpress theme</div></div><a href="http://thesisdoctor.com/skins/blackandwhite/" target="_blank"><img src="images/projects/blackandwhite.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Site design for Brendan Wenzel - made with Thesis on Wordpress</div></div><a href="http://brendanwenzel.net/" target="_blank"><img src="images/projects/brendanwenzel.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Costaricaunplugged site design - made with Thesis on Wordpress</div></div><a href="http://costaricaunplugged.com/" target="_blank"><img src="images/projects/costaricaunplugged.jpg" alt=""/></a></div>
 
-						<div class="project"><div class="desc"><div>Britainwest - Magento development</div></div><a href="http://britainwest.com/" target="_blank"><img src="images/projects/britainwest.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>UCstrategies - Page design &amp; interaction</div></div><a href="http://ucstrategies.com/" target="_blank"><img src="images/projects/ucstrategies.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>ICollegeWeb system development</div></div><a href="http://icollegeweb.com/" target="_blank"><img src="images/projects/icollegeweb.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Britainwest - Magento development</div></div><a href="http://britainwest.com/" target="_blank"><img src="images/projects/britainwest.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>UCstrategies - Page design &amp; interaction</div></div><a href="http://ucstrategies.com/" target="_blank"><img src="images/projects/ucstrategies.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>ICollegeWeb system development</div></div><a href="http://icollegeweb.com/" target="_blank"><img src="images/projects/icollegeweb.jpg" alt=""/></a></div>
 
-						<div class="project"><div class="desc"><div>Zobody design - made on Wordpress</div></div><a href="http://zobodywellness.com/" target="_blank"><img src="images/projects/zobody.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>Cafe Flore design - Static pages</div></div><a href="http://cafeflore.com/" target="_blank"><img src="images/projects/cafeflore.jpg" border="0" alt=""/></a></a></div>
-						<div class="project"><div class="desc"><div>Maaden Design - made on Wordpress</div></div><a href="http://maaden.com.sa/" target="_blank"><img src="images/projects/maaden.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Zobody design - made on Wordpress</div></div><a href="http://zobodywellness.com/" target="_blank"><img src="images/projects/zobody.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Cafe Flore design - Static pages</div></div><a href="http://cafeflore.com/" target="_blank"><img src="images/projects/cafeflore.jpg" alt=""/></a></div>
+						<div class="project"><div class="desc"><div>Maaden Design - made on Wordpress</div></div><a href="http://maaden.com.sa/" target="_blank"><img src="images/projects/maaden.jpg" alt=""/></a></div>
 						
 						<div class="clear"></div>
 					</div>
