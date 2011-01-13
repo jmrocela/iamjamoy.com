@@ -7,13 +7,14 @@ jQuery(function($) {
 		if ($('#moinaushdtlawjkdsf').val() && email && $('#cvoihryoncoxirypweo').val()) {
 			return true;
 		} else {
-			$('#contact').before('<div id="confirmcontact"><div class="wrapper">Please make sure you have every field filled out. Thank you :)</div></div>');
-			$.scrollTo('#confirmcontact', 500, function(){
+			if ($('#confirmcontact').length == 0) {
+				$('#contact').before('<div id="confirmcontact"><div class="wrapper">Please make sure you have every field filled out. Thank you :)</div></div>');
 				$('#confirmcontact').slideDown(1000);
-			});
-			if (email == false) {
-				$('#confirmcontact').append('<br/>oh! and make sure you are using a valid email too.');
+				if (email == false) {
+					$('#confirmcontact').append('<br/>oh! and make sure you are using a valid email too.');
+				}
 			}
+			$.scrollTo('#confirmcontact', 500);
 		}
 		if (!$('#moinaushdtlawjkdsf').val()) $('#moinaushdtlawjkdsf').addClass('required');
 		if (!$('#porijosdnakjrblksajiu').val()) $('#porijosdnakjrblksajiu').addClass('required');

@@ -16,10 +16,11 @@ header, footer, aside, nav, article, section { display: block; }
 /**
  * -----------FONT FACE-----------
  */
-@font-face { font-family: Delicious; src: url('fonts/Delicious-Roman.otf'); }
-@font-face { font-family: DeliciousBold; src: url('fonts/Delicious-Bold.otf'); font-weight: 700; }
-@font-face { font-family: Georgia; src: url('fonts/georgia_0.ttf'); }
-@font-face { font-family: Nevis; src: url('fonts/nevis_0.ttf'); font-weight: 700; }
+@font-face { font-family: Delicious; src: local('delicious'), url('fonts/Delicious-Roman.otf'); }
+@font-face { font-family: Delicious; src: local('delicious'), url('fonts/Delicious-Bold.otf'); font-weight: bold; }
+@font-face { font-family: georgia; src: local('georgia'), url('fonts/georgia_0.ttf') format('truetype'); }
+@font-face { font-family: georgia; src: local('georgia'), url('fonts/georgiab_0.ttf') format('truetype'); font-weight: bold; }
+@font-face { font-family: nevis; src: url('fonts/nevis_0.ttf') format('truetype'); }
 
 /**
  * -----------ELEMENTS-----------
@@ -37,7 +38,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 #bar { background: #868686 url('images/bar.jpg') repeat-x top left scroll; border-bottom: 1px solid #e5e5e5; height: 50px; text-align: center; }
 	#bar #codepassive { padding: 13px 0; }
 #me { text-align: center; }
-	#me h1 { font-family: Nevis, georgia, helvetica, arial; font-size: 110px; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 60px 0; }
+	#me h1 { font-family: nevis, georgia, helvetica, arial; font-size: 110px; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 60px 0; }
 	#me h2, #me h5 { font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
 	#me h2 { font-size: 30px; }
 	#me h5 { font-size: 18px; }
@@ -65,7 +66,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		#about ul a { color: #f1f0f0; text-decoration: none; }
 			#about ul a:hover { text-decoration: underline; }
 	#about #personal { margin-top: 50px; }
-		#about #personal a { display: block; float: left; margin-right: 30px; padding: 10px 20px 10px 40px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: DeliciousBold, Delicious, georgia, helvetica, arial; font-size: 20px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
+		#about #personal a { display: block; float: left; margin-right: 30px; padding: 10px 20px 10px 40px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: Delicious, Delicious, georgia, helvetica, arial; font-size: 20px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
 		#about #personal a:hover { border: 1px solid #aaaaaa; }
 		#about #personal a:active { margin-top: 3px; margin-bottom: -3px; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); border: 1px solid #939393; -moz-border-radius: 5px; -moz-box-shadow: 0 0 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; }
 #portfolio { background: #f1f1f1; border-top: 1px solid #999999; border-bottom: 1px solid #999999; }
@@ -93,10 +94,10 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 			#contact #form #input #porijosdnakjrblksajiu { width: 320px; }
 			#contact #form #input textarea { color: #ababab; font-family: arial; font-size: 24px; padding: 5px; width: 798px; height: 300px; border: 1px solid #ababab; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; resize: none; }
 			#contact #form #input input:focus, #contact #form #input textarea:focus {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; }
-			#contact #form #input #neiowubsndiufbyaw { margin-right: 10px; width: 90px; padding: 10px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: DeliciousBold, Delicious, georgia, helvetica, arial; font-size: 24px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
+			#contact #form #input #neiowubsndiufbyaw { margin-right: 10px; width: 90px; padding: 10px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: Delicious, Delicious, georgia, helvetica, arial; font-size: 24px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
 			#contact #form #input input.required, #contact #form #input textarea.required {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); }
 		#contact #form:after { clear: both; display: block; content: ""; }
-		#confirmcontact { background: #fff799; padding: 50px 10px; text-align: center; font-family: arial; font-size: 18px; color: #595632; }
+		#confirmcontact { background: #fff799; padding: 30px 10px; text-align: center; font-family: arial; font-size: 18px; color: #595632; }
 #footer { background: #868686 url('images/footerglow.jpg') repeat-x bottom left scroll; font-family: arial; border-top: 1px solid #444444; }
 	#footer .padding { padding: 20px; }
 	#footer #copyright { padding: 10px 0; text-align: center; color: #7e8388; font-size: 11px; }
@@ -112,22 +113,3 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		#footer #stuff li { padding-bottom: 5px; }
 		#footer #stuff li a { font-size: 16px; color: #242424; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 rgba(255,255,255,0.2); }
 		#footer #stuff li a:hover { color: #00aeef; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

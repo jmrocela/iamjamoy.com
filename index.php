@@ -12,6 +12,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						 'Reply-To: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'X-Mailer: PHP/' . phpversion();
 		mail($to, $subject, $message, $headers);
+		headers('Location: http://iamjamoy.com/?sent=1');
 	}
 }
 ?>
@@ -19,7 +20,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>iamjamoy. a web developer, designer &amp; enthusiast</title>
+		<title>iamjamoy - a web developer, designer &amp; enthusiast</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
 		<meta name="description" content="I help people make beautiful websites, functional applications	and seamless user experiences.">
 		<meta name="keywords" content="jamoy, iamjamoy, web design, web development, github, forrst, php, resume, cv">
@@ -187,7 +188,14 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	<script type="text/javascript" src="jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="iamjamoy.js"></script>
 	<script type="text/javascript">
-
+	<?php if (@$_GET['sent'] == 1) {?>
+	  jQuery(function($){
+		$('#contact').before('<div id="confirmcontact"><div class="wrapper">I have received your message! Thank you very much :)</div></div>');
+		$('#confirmcontact').slideDown(1000);
+		$.scrollTo('#confirmcontact', 500);
+	  });
+	 <?php } ?>
+	 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-18694986-1']);
 	  _gaq.push(['_trackPageview']);
