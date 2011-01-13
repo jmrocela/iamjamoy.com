@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 $_SESSION['nonces'] = array();
 	
@@ -6,7 +7,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	if (verify_nonce($_POST['_nonce'])) {
 		$to = 'me@iamjamoy.com';
 		$subject = 'You have been contact by ' . strip_tags($_POST["moginurwnidubsklifb"]) . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
-		$message = strip_tages($_POST["zxciowentpodsdpg"]);
+		$message = strip_tags($_POST["zxciowentpodsdpg"]);
 		$headers = 'From: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'Reply-To: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'X-Mailer: PHP/' . phpversion();
@@ -17,8 +18,11 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>iamjamoy. a web developer, designer &amp; enthusiast</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+		<meta name="description" content="I help people make beautiful websites, functional applications	and seamless user experiences.">
+		<meta name="keywords" content="jamoy, iamjamoy, web design, web development, github, forrst, php, resume, cv">
 	</head>
 <body>
 	<div id="container">
@@ -156,7 +160,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 							<p><input type="text" name="moginurwnidubsklifb" id="moinaushdtlawjkdsf"/></p>
 							<p><input type="text" name="oijpowighsadojngrlkj" id="porijosdnakjrblksajiu"/></p>
 							<p><textarea name="zxciowentpodsdpg" id="cvoihryoncoxirypweo"></textarea></p>
-							<p class="right">Your Email will be kept safe. don’t worry.</p>
+							<p class="right">Your Email will not be stored and will be kept safe. don’t worry.</p>
 							<input type="submit" value="send" id="neiowubsndiufbyaw" />
 						</div>
 						</form>
@@ -170,7 +174,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 					<div id="copyright">
 						<a href="http://iamjamoy.com/" id="iamjamoyfooter"></a>
 						<a href="http://codepassive.com/" id="codepassivefooter"></a>
-						<p>copyright &#0169; 2011. hosted at <strong><a href="http://www.mediatemple.net/">(mt)</a></strong></p>
+						<p>copyright &#0169; 2011 &#0183; <a href="http://iamjamoy.com/v1/">old version</a> &#0183; hosted at <strong><a href="http://www.mediatemple.net/">(mt)</a></strong></p>
 						<p id="love">made with html5 &amp; css3 love</p>
 						<p><br/>This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/jmrocela/iamjamoy.com" rel="dct:source">github.com</a>.</p>
 					</div>
@@ -181,24 +185,19 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	</div>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="iamjamoy.js"></script>
 	<script type="text/javascript">
-		jQuery(function($) {
-			$('.project .desc').show();
-			$('.project .desc').each(function(){
-				var height = $(this).height();
-				$(this).css({marginTop: height * -1});
-			});
-			
-			$('.project').hover(function(){
-				$(this).find('.desc').animate({marginTop:0},200);
-			}, function(){
-				var height = $(this).find('.desc').height();
-				$(this).find('.desc').animate({marginTop:height * -1},200);
-			});
-			
-			$('.scrolltoportfolio').click(function(){$.scrollTo('#portfolio', 500);});
-			$('.scrolltocontactme').click(function(){$.scrollTo('#contact', 500);});
-		});
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18694986-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
 	</script>
 </body>
 </html>
@@ -210,7 +209,7 @@ function nonce($salt = 'thisisarandomsalt') {
 }
 
 function verify_nonce($nonce) {
-	if ($nonce == $_SESSION['nonce']) {
+	if ($nonce == @$_SESSION['nonce']) {
 		unset($_SESSION['nonce']);
 		return true;
 	}
