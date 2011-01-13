@@ -11,7 +11,7 @@ jQuery(function($) {
 				$('#contact').before('<div id="confirmcontact"><div class="wrapper">Please make sure you have every field filled out. Thank you :)</div></div>');
 				$('#confirmcontact').slideDown(1000);
 				if (email == false) {
-					$('#confirmcontact').append('<br/>oh! and make sure you are using a valid email too.');
+					$('#confirmcontact .wrapper').append('<br/>oh! and make sure you are using a valid email too.');
 				}
 			}
 			$.scrollTo('#confirmcontact', 500);

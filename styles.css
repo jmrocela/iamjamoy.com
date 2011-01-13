@@ -26,12 +26,10 @@ header, footer, aside, nav, article, section { display: block; }
  * -----------ELEMENTS-----------
  */
 body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-family: georgia; font-size: 15px; color: #ffffff; }
-
 .clear { clear: both; }
 .left { float: left; }
 .right { float: right; }
 .right:after { clear: both; display: block; content: ""; }
-
 .wrapper { width: 960px; margin: 0 AUTO; }
 .padding { padding: 20px 0; }
 #container { background: url('images/meglow.png') no-repeat top center scroll; }
@@ -47,6 +45,10 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 #social { padding: 60px 0 30px; }
 	#social #icons { width: 300px; margin: 0 AUTO; }
 	#social #icons a { display: block; float: left; height: 55px; width: 55px; margin: 0 10px; background: url('images/social-icons.png') no-repeat top center scroll; }
+	#social #icons a#twitters { background: url('images/social-icons-twitter.png') no-repeat top center scroll; }
+	#social #icons a#forrsts { background: url('images/social-icons-forrst.png') no-repeat top center scroll; }
+	#social #icons a#githubs { background: url('images/social-icons-github.png') no-repeat top center scroll; }
+	#social #icons a#blogs { background: url('images/social-icons-blog.png') no-repeat top center scroll; }
 	#social #icons:after { clear: both; display: block; content: ""; }
 #products { background: #272727; margin: 40px 0; }
 	#concerto .logo { float: left; background: #272727 url('images/concerto.jpg') no-repeat top center scroll; height: 75px; width: 257px; margin: 25px 0 0 20px; }
@@ -95,7 +97,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 			#contact #form #input textarea { color: #ababab; font-family: arial; font-size: 24px; padding: 5px; width: 798px; height: 300px; border: 1px solid #ababab; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; resize: none; }
 			#contact #form #input input:focus, #contact #form #input textarea:focus {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #f26522; }
 			#contact #form #input #neiowubsndiufbyaw { margin-right: 10px; width: 90px; padding: 10px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: Delicious, Delicious, georgia, helvetica, arial; font-size: 24px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
-			#contact #form #input input.required, #contact #form #input textarea.required {  color: #000000; -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); }
+			#contact #form #input input.required, #contact #form #input textarea.required {  color: #000000; -moz-box-shadow: inset 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); -webkit-box-shadow: inset 0 0 3px #FFF940, 0 0 5px rgba(255,0,0,0.3); }
 		#contact #form:after { clear: both; display: block; content: ""; }
 		#confirmcontact { background: #fff799; padding: 30px 10px; text-align: center; font-family: arial; font-size: 18px; color: #595632; }
 #footer { background: #868686 url('images/footerglow.jpg') repeat-x bottom left scroll; font-family: arial; border-top: 1px solid #444444; }

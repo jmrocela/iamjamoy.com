@@ -48,10 +48,10 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 		<div id="social">
 			<div class="wrapper">
 				<div id="icons">
-					<a href="http://twitter.com/jmrocela" title="@jmrocela"></a>
-					<a href="http://forrst.com/people/jmrocela" title="I'm on forrst"></a>
-					<a href="http://github.com/jmrocela/" title="my open source projects"></a>
-					<a href="http://blog.iamjamoy.com/" title="subscribe to my blog"></a>
+					<a id="twitters" href="http://twitter.com/jmrocela" title="@jmrocela"></a>
+					<a id="forrsts" href="http://forrst.com/people/jmrocela" title="I'm on forrst"></a>
+					<a id="githubs" href="http://github.com/jmrocela/" title="my open source projects"></a>
+					<a id="blogs" href="http://blog.iamjamoy.com/" title="subscribe to my blog"></a>
 				</div>
 			</div>
 		</div>
@@ -70,7 +70,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 					<div id="aboutme">
 						<h3>About me...</h3>
 						<p>Hi there, I am John, a Web designer and developer, 21 years of age. I have been working as a freelance for almost 5 years now and I will be glad in helping you create your next awesome project.</p>
-						<p>I  have been working after I graduated in high school. I have created lots of public and private websites(some shown below) and always looking for more work to learn from. I am using PHP as my primary language server side language. You can see my skillset beside this text.</p>
+						<p>I  have been working since I graduated from high school. I have created lots of public and private websites(some shown below) and always looking for more work to learn from. I am using PHP as my primary language server side language. You can see my skillset beside this text.</p>
 						<p>I am person who is willing to learn and adapts quickly. I am keen to design and security. I believe in the core principles of Open Source and support it. I have a minimalistic approach to design and usability. Simplicity is beauty they say.</p>
 						<div id="personal">
 							<a href="public/cv-january2011.pdf">View my CV</a>
@@ -129,7 +129,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						<div class="project"><div class="desc"><div>Site design for Brendan Wenzel - made with Thesis on Wordpress</div></div><a href="http://brendanwenzel.net/" target="_blank"><img src="images/projects/brendanwenzel.jpg" border="0" alt=""/></a></div>
 						<div class="project"><div class="desc"><div>Costaricaunplugged site design - made with Thesis on Wordpress</div></div><a href="http://costaricaunplugged.com/" target="_blank"><img src="images/projects/costaricaunplugged.jpg" border="0" alt=""/></a></a></div>
 
-						<div class="project"><div class="desc"><div>Magento development</div></div><a href="http://britainwest.com/" target="_blank"><img src="images/projects/britainwest.jpg" border="0" alt=""/></a></a></div>
+						<div class="project"><div class="desc"><div>Britainwest - Magento development</div></div><a href="http://britainwest.com/" target="_blank"><img src="images/projects/britainwest.jpg" border="0" alt=""/></a></a></div>
 						<div class="project"><div class="desc"><div>UCstrategies - Page design &amp; interaction</div></div><a href="http://ucstrategies.com/" target="_blank"><img src="images/projects/ucstrategies.jpg" border="0" alt=""/></a></a></div>
 						<div class="project"><div class="desc"><div>ICollegeWeb system development</div></div><a href="http://icollegeweb.com/" target="_blank"><img src="images/projects/icollegeweb.jpg" border="0" alt=""/></a></a></div>
 
