@@ -5,7 +5,7 @@ $_SESSION['nonces'] = array();
 if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_POST["zxciowentpodsdpg"] AND @$_POST['_nonce']) {
 	if (verify_nonce($_POST['_nonce'])) {
 		$to = 'me@iamjamoy.com';
-		$subject = 'You have been contact by ' . strip_tags($_POST["moginurwnidubsklifb"]); . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
+		$subject = 'You have been contact by ' . strip_tags($_POST["moginurwnidubsklifb"]) . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
 		$message = strip_tages($_POST["zxciowentpodsdpg"]);
 		$headers = 'From: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'Reply-To: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
@@ -32,11 +32,11 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 				<div class="padding">
 					<h1>IAMJAMOY</h1>
 					<h2>
-						I am John, a Web Designer and Developer. <a href="#">A PHP Ninja</a>.<br/>
-						I help people make <a href="#">beautiful websites</a>, <a href="#">functional applications</a><br/>
-						and <a href="#">seamless user experiences</a>.
+						I am John, a Web Designer and Developer. <a href="http://github.com/jmrocela/">A PHP Ninja</a>.<br/>
+						I help people make <a href="javascript:;" class="scrolltoportfolio">beautiful websites</a>, functional applications<br/>
+						and <a href="http://themeconcert.com/">seamless user experiences</a>.
 					</h2>
-					<h5>I also <a href="#">write random stuff</a> about what I’m interested in.</h5>
+					<h5>I also <a href="http://blog.iamjamoy.com/">write random stuff</a> about what I’m interested in.</h5>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 			<div class="wrapper">
 				<div id="icons">
 					<a href="http://twitter.com/jmrocela" title="@jmrocela"></a>
-					<a href="http://facebook.com/jmrocela" title="LinkedIn profile"></a>
+					<a href="http://forrst.com/people/jmrocela" title="I'm on forrst"></a>
 					<a href="http://github.com/jmrocela/" title="my open source projects"></a>
 					<a href="http://blog.iamjamoy.com/" title="subscribe to my blog"></a>
 				</div>
@@ -68,8 +68,8 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						<p>I  have been working after I graduated in high school. I have created lots of public and private websites(some shown below) and always looking for more work to learn from. I am using PHP as my primary language server side language. You can see my skillset beside this text.</p>
 						<p>I am person who is willing to learn and adapts quickly. I am keen to design and security. I believe in the core principles of Open Source and support it. I have a minimalistic approach to design and usability. Simplicity is beauty they say.</p>
 						<div id="personal">
-							<a href="cv-january2011.pdf">View my CV</a>
-							<a href="javascript:;">Contact me</a>
+							<a href="public/cv-january2011.pdf">View my CV</a>
+							<a href="javascript:;" class="scrolltocontactme">Contact me</a>
 						</div>
 					</div>
 					<div id="skillsandbelief">
@@ -84,7 +84,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 							<li>Android Development</li>
 							<li>Development &amp; Deployment</li>
 							<li>Multimedia Production</li>
-							<li><a href="#"><em>...and anything Web Related...</em></a></li>
+							<li><a href="http://blog.iamjamoy.com/tags/web"><em>...and anything Web Related...</em></a></li>
 						</ul>
 						<h3>Belief</h3>
 						<ul class="left">
@@ -168,8 +168,8 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 			<div class="wrapper">
 				<div class="padding">
 					<div id="copyright">
-						<a href="#" id="iamjamoyfooter"></a>
-						<a href="#" id="codepassivefooter"></a>
+						<a href="http://iamjamoy.com/" id="iamjamoyfooter"></a>
+						<a href="http://codepassive.com/" id="codepassivefooter"></a>
 						<p>copyright &#0169; 2011. hosted at <strong><a href="http://www.mediatemple.net/">(mt)</a></strong></p>
 						<p id="love">made with html5 &amp; css3 love</p>
 						<p><br/>This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/jmrocela/iamjamoy.com" rel="dct:source">github.com</a>.</p>
@@ -180,6 +180,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 		</div>
 	</div>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript">
 		jQuery(function($) {
 			$('.project .desc').show();
@@ -194,6 +195,9 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 				var height = $(this).find('.desc').height();
 				$(this).find('.desc').animate({marginTop:height * -1},200);
 			});
+			
+			$('.scrolltoportfolio').click(function(){$.scrollTo('#portfolio', 500);});
+			$('.scrolltocontactme').click(function(){$.scrollTo('#contact', 500);});
 		});
 	</script>
 </body>
