@@ -1,18 +1,18 @@
 <?php
-error_reporting(0);
+error_reporting(E_ALL);
 session_start();
 $_SESSION['nonces'] = array();
 	
 if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_POST["zxciowentpodsdpg"] AND @$_POST['_nonce']) {
 	if (verify_nonce($_POST['_nonce'])) {
 		$to = 'me@iamjamoy.com';
-		$subject = 'You have been contact by ' . strip_tags($_POST["moginurwnidubsklifb"]) . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
+		$subject = 'You have been contacted by ' . strip_tags($_POST["moginurwnidubsklifb"]) . ' of ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . ' on iamjamoy.com';
 		$message = strip_tags($_POST["zxciowentpodsdpg"]);
 		$headers = 'From: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'Reply-To: ' . strip_tags($_POST["oijpowighsadojngrlkj"]) . "\r\n" .
 						 'X-Mailer: PHP/' . phpversion();
 		mail($to, $subject, $message, $headers);
-		headers('Location: http://iamjamoy.com/?sent=1');
+		header('Location: http://iamjamoy.com/?sent=1');
 	}
 }
 ?>
