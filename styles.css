@@ -18,14 +18,13 @@ header, footer, aside, nav, article, section { display: block; }
  */
 @font-face { font-family: Delicious; src: local('delicious'), url('fonts/Delicious-Roman.otf'); }
 @font-face { font-family: Delicious; src: local('delicious'), url('fonts/Delicious-Bold.otf'); font-weight: bold; }
-@font-face { font-family: georgia; src: local('georgia'), url('fonts/georgia_0.ttf') format('truetype'); }
-@font-face { font-family: georgia; src: local('georgia'), url('fonts/georgiab_0.ttf') format('truetype'); font-weight: bold; }
+@font-face { font-family: "Myriad Web Pro"; src: local('myriad web pro'), url('fonts/MyriadWebPro.ttf') format('truetype'); }
 @font-face { font-family: nevis; src: url('fonts/nevis_0.ttf') format('truetype'); }
 
 /**
  * -----------ELEMENTS-----------
  */
-body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-family: georgia; font-size: 15px; color: #ffffff; }
+body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-family: "Myriad Web Pro"; font-size: 15px; color: #ffffff; }
 .clear { clear: both; }
 .left { float: left; }
 .right { float: right; }
@@ -37,7 +36,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 	#bar #codepassive { padding: 13px 0; }
 #me { text-align: center; }
 	#me h1 { font-family: nevis, georgia, helvetica, arial; font-size: 110px; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 60px 0; }
-	#me h2, #me h5 { font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+	#me h2, #me h5 { font-family: Delicious, georgia, helvetica, arial; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); }
 	#me h2 { font-size: 30px; }
 	#me h5 { font-size: 18px; }
 	#me a { color: #ffffff; text-decoration: none; }
@@ -57,18 +56,21 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 	#concerto .wordpress { float: right; }
 		#concerto .outofthebox { position: relative; margin-bottom: -3px; margin-top: -35px; margin-right: 20px; }
 	#products .product:after { clear: both; display: block; content: ""; }
-#about {  font-size: 18px; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); }
+#about {  font-size: 18px; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 	#about .wrapper { margin: 0 AUTO; }
 	#about .padding { margin: 0 20px 40px; }
 	#about #aboutme { float: left; width: 500px; }
 	#about #skillsandbelief { float: right; width: 300px; }
 	#about #ps { clear: both; text-align: center; font-size: 30px; padding-top: 50px; }
-		#about h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-top: 30px; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+		#about h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-top: 30px; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 		#about p, #about ul { margin-top: 20px; line-height: 25px; }
-		#about ul a { color: #f1f0f0; text-decoration: none; }
+		#about ul a { color: #222222; text-decoration: none; }
 			#about ul a:hover { text-decoration: underline; }
 	#about #personal { margin-top: 50px; }
-		#about #personal a { display: block; float: left; margin-right: 30px; padding: 10px 20px 10px 40px; text-decoration: none; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: Delicious, Delicious, georgia, helvetica, arial; font-size: 20px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
+		#about #personal a { display: block; float: left; margin-right: 30px; text-decoration: none; padding: 2px; border: 1px solid #939393; color: #787878; font-weight: bold; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); font-family: Delicious, Delicious, georgia, helvetica, arial; font-size: 20px; -moz-border-radius: 5px; -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; text-shadow: 0 1px 0 #ffffff; }
+			#about #personal a span { display: block; padding: 8px 18px 8px 38px; }
+				#about #personal a span#cv { background: transparent url('images/cv.png') no-repeat 10px 11px scroll; }
+				#about #personal a span#contactme { background: transparent url('images/contact.png') no-repeat 10px 12px scroll; }
 		#about #personal a:hover { border: 1px solid #aaaaaa; }
 		#about #personal a:active { margin-top: 3px; margin-bottom: -3px; background: #f4f4f4; background: -moz-linear-gradient(100% 100% 90deg, #cacaca, #f4f4f4); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#cacaca)); border: 1px solid #939393; -moz-border-radius: 5px; -moz-box-shadow: 0 0 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; -webkit-border-radius: 5px; -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.2), inset 0 0 4px #ffffff; }
 #portfolio { background: #f1f1f1; border-top: 1px solid #999999; border-bottom: 1px solid #999999; }
@@ -81,11 +83,11 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		h4#postprojects { color: #bababa; text-align: center; margin-top: 50px; }
 			h4#postprojects a { color: #bababa; text-decoration: none; }
 			h4#postprojects a:hover { text-decoration: underline; }
-#contact { border-top: 1px solid #eeeeee; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); border-bottom: 1px solid #dadada; }
+#contact { border-top: 1px solid #eeeeee; border-bottom: 1px solid #dadada; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 	#contact .padding { padding: 50px 20px; }
-		#contact h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-bottom: 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+		#contact h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-bottom: 20px; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 		#contact p { font-size: 18px; }
-			#contact p a { color: #ffffff; text-decoration: none; }
+			#contact p a { color: #555555; text-decoration: none; }
 			#contact p a:hover { text-decoration: underline; }
 		#contact #form { margin-top: 20px; }
 			#contact #form p { margin: 10px 0; }

@@ -73,8 +73,8 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						<p>I  have been working since I graduated from high school. I have created lots of public and private websites(some shown below) and always looking for more work to learn from. I am using PHP as my primary language server side language. You can see my skillset beside this text.</p>
 						<p>I am person who is willing to learn and adapts quickly. I am keen to design and security. I believe in the core principles of Open Source and support it. I have a minimalistic approach to design and usability. Simplicity is beauty they say.</p>
 						<div id="personal">
-							<a href="public/cv-january2011.pdf">View my CV</a>
-							<a href="javascript:;" class="scrolltocontactme">Contact me</a>
+							<a href="public/cv-january2011.pdf"><span id="cv">View my CV</span></a>
+							<a href="javascript:;" class="scrolltocontactme"><span id="contactme">Contact me</span></a>
 						</div>
 					</div>
 					<div id="skillsandbelief">
