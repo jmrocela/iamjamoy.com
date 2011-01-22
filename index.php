@@ -21,7 +21,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 	<head>
 		<meta charset="utf-8">
 		<title>iamjamoy - a web developer, designer &amp; enthusiast</title>
-		<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 		<meta name="description" content="I help people make beautiful websites, functional applications	and seamless user experiences.">
 		<meta name="keywords" content="jamoy, iamjamoy, web design, web development, github, forrst, php, resume, cv">
 	</head>
@@ -75,37 +75,42 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 						<div id="personal">
 							<a href="public/cv-january2011.pdf"><span id="cv">View my CV</span></a>
 							<a href="javascript:;" class="scrolltocontactme"><span id="contactme">Contact me</span></a>
+							<div class="clear"></div>
 						</div>
 					</div>
 					<div id="skillsandbelief">
-						<h3>Skills</h3>
-						<ul>
-							<li>PHP</li>
-							<li>SQL Databases &amp; noSQL engines</li>
-							<li>Javascript &amp; AJAX (JSON)</li>
-							<li>xHTML &amp; HTML5</li>
-							<li>CSS2.1 &amp; CSS3</li>
-							<li>Web Application development</li>
-							<li>Android Development</li>
-							<li>Development &amp; Deployment</li>
-							<li>Multimedia Production</li>
-							<li><a href="http://blog.iamjamoy.com/tags/web"><em>...and anything Web Related...</em></a></li>
-						</ul>
-						<h3>Belief</h3>
-						<ul class="left">
-							<li>Open Source</li>
-							<li>Modular</li>
-							<li>Test Driven</li>
-							<li>Minimal</li>
-							<li>Simple</li>
-						</ul>
-						<ul class="right">
-							<li>Productive</li>
-							<li>Valid</li>
-							<li>Secure</li>
-							<li>Extensible</li>
-							<li>Innovative</li>
-						</ul>
+						<div id="skillslist">
+							<h3>Skills</h3>
+							<ul>
+								<li>PHP</li>
+								<li>SQL Databases &amp; noSQL engines</li>
+								<li>Javascript &amp; AJAX (JSON)</li>
+								<li>xHTML &amp; HTML5</li>
+								<li>CSS2.1 &amp; CSS3</li>
+								<li>Web Application development</li>
+								<li>Android Development</li>
+								<li>Development &amp; Deployment</li>
+								<li>Multimedia Production</li>
+								<li><a href="http://blog.iamjamoy.com/tags/web"><em>...and anything Web Related...</em></a></li>
+							</ul>
+						</div>
+						<div id="belieflist">
+							<h3>Belief</h3>
+							<ul class="left">
+								<li>Open Source</li>
+								<li>Modular</li>
+								<li>Test Driven</li>
+								<li>Minimal</li>
+								<li>Simple</li>
+							</ul>
+							<ul class="right">
+								<li>Productive</li>
+								<li>Valid</li>
+								<li>Secure</li>
+								<li>Extensible</li>
+								<li>Innovative</li>
+							</ul>
+						</div>
 					</div>
 					<div id="ps">"I develop web apps on CodePassive."</div>
 				</div>
@@ -161,7 +166,7 @@ if (@$_POST["moginurwnidubsklifb"] AND @$_POST["oijpowighsadojngrlkj"] AND @$_PO
 							<p><input type="text" name="moginurwnidubsklifb" id="moinaushdtlawjkdsf"/></p>
 							<p><input type="text" name="oijpowighsadojngrlkj" id="porijosdnakjrblksajiu"/></p>
 							<p><textarea name="zxciowentpodsdpg" id="cvoihryoncoxirypweo"></textarea></p>
-							<p class="right">Your Email will not be stored and will be kept safe. don't worry.</p>
+							<p class="right emailissecure">Your Email will not be stored and will be kept safe. don't worry.</p>
 							<input type="submit" value="send" id="neiowubsndiufbyaw" />
 						</div>
 						</form>

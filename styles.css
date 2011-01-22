@@ -56,7 +56,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 	#concerto .wordpress { float: right; }
 		#concerto .outofthebox { position: relative; margin-bottom: -3px; margin-top: -35px; margin-right: 20px; }
 	#products .product:after { clear: both; display: block; content: ""; }
-#about {  font-size: 18px; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
+#about {  font-size: 18px; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 	#about .wrapper { margin: 0 AUTO; }
 	#about .padding { margin: 0 20px 40px; }
 	#about #aboutme { float: left; width: 500px; }
@@ -83,7 +83,7 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		h4#postprojects { color: #bababa; text-align: center; margin-top: 50px; }
 			h4#postprojects a { color: #bababa; text-decoration: none; }
 			h4#postprojects a:hover { text-decoration: underline; }
-#contact { border-top: 1px solid #eeeeee; border-bottom: 1px solid #dadada; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
+#contact { border-top: 1px solid #eeeeee; border-bottom: 1px solid #dadada; color: #555555; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 	#contact .padding { padding: 50px 20px; }
 		#contact h3 { font-size: 50px; font-family: Delicious, georgia, helvetica, arial; margin-bottom: 20px; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
 		#contact p { font-size: 18px; }
@@ -117,3 +117,117 @@ body { background: #c7c7c7 url('images/noise.jpg') repeat top left scroll; font-
 		#footer #stuff li { padding-bottom: 5px; }
 		#footer #stuff li a { font-size: 16px; color: #242424; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 rgba(255,255,255,0.2); }
 		#footer #stuff li a:hover { color: #00aeef; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+
+/**
+ * -----------MOBILE-----------
+ */
+@media only screen and (max-width: 980px) {
+	.wrapper { width: auto; }
+	#me h1 { font-size: 5.4em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+	#me h2 { font-size: 1.4em; }
+	#me h5 { font-size: 1.2em; }
+	#social { padding: 20px 0 30px; }
+	
+	#products { background: #272727; margin: 20px 0 10px; padding: 20px 0 30px; }
+	#concerto .logo { float: none; display: block; clear: both; height: 75px; width: 257px; margin: 25px AUTO 0 AUTO; }
+	#concerto .desc { float: none; clear: both; width: 400px; margin: 32px AUTO 0 AUTO; text-align: center; }
+	#concerto .wordpress { display: none; float: none; }
+	
+	#personal { margin: 30px AUTO; width: 400px; padding-left: 60px; }
+	#about #aboutme, #about #skillsandbelief { width: 100%; float: none; clear: none; }
+	#about #skillsandbelief { margin-top: 20px; } 
+	#about #skillsandbelief #skillslist { float: left; width: 50%; }
+	#about #skillsandbelief #belieflist { float: right; width: 50%; }
+	
+	.project { width: 47%; }
+	.project .desc, .project img { width: 100%; }
+
+	#contact .padding { padding: 30px 20px 30px; }
+	#contact h3 { font-size: 2.5em; }
+	#contact p { font-size: 1.2em; }
+	#contact #form { margin-top: 20px; }
+	#contact #form p { margin: 10px 0; }
+	#contact #form #labels label { font-size: 1.2em; display: block; margin-top: 12px; }
+	#contact #form #input { float: none; }
+	#contact #form #input input { color: #ababab; font-size: 1em; width: 55%;}
+	#contact #form #input #porijosdnakjrblksajiu { width: 45%; }
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 86%; }
+	#contact #form #input #neiowubsndiufbyaw { font-size: 1.4em; margin-left: 110px; }
+}
+
+@media only screen and (max-width: 930px) {
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 85.2%; }
+}
+
+@media only screen and (max-width: 885px) {
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 84.8%; }
+}
+
+@media only screen and (max-width: 865px) {
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 80%; }
+}
+
+@media only screen and (max-width: 825px) {
+	#contact #form #input .emailissecure { display: none; }
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 70%; height: 200px; }
+}
+
+@media only screen and (max-width: 658px) {
+	.project { width: 47%; height: 120px; }
+}
+
+@media only screen and (max-width: 480px) {
+	.wrapper { width: auto; }
+	#me h1 { font-size: 3.4em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+	#me h2 { font-size: 1.2em; }
+	#me h5 { font-size: 1em; }
+	
+	#personal { padding-left: 40px; }
+	#about #aboutme, #about #skillsandbelief { width: 100%; float: none; clear: none; }
+	#about #skillsandbelief { margin-top: 20px; } 
+	#about #skillsandbelief #skillslist { float: left; width: 50%; }
+	#about #skillsandbelief #belieflist { float: right; width: 50%; }
+	
+	.project { width: 95%; }
+	.project .desc, .project img { width: 100%; }
+
+	#contact h3 { font-size: 2.5em; }
+	#contact p { font-size: 1.2em; }
+	#contact #form { margin-top: 20px; }
+	#contact #form p { margin: 10px 0; }
+	#contact #form #labels label { font-size: 1.2em; display: block; margin-top: 12px; }
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 70%; height: 200px; }
+	#contact #form #input #neiowubsndiufbyaw { font-size: 1.4em; margin-left: 50%; }
+}
+
+@media only screen and (max-width: 470px) {
+	#me h2 { display: none; }
+	#me h5 { display: none; }
+	#personal { display: none; }
+	#about #skillsandbelief #skillslist { float: none; clear: both; width: 100% }
+	#about #skillsandbelief #belieflist { float: none; clear: both; width: 100% }
+	#contact #form #input textarea { font-size: 1em; padding: 5px; width: 65%; height: 200px; }
+}
+
+@media only screen and (max-width: 400px) {
+	#form { display: none; }
+	#social #icons { width: 100%; }
+	#concerto .desc  { display: none; }
+}
+
+@media only screen and (max-width: 320px) {
+	.wrapper { width: auto; }
+	#me h1 { font-size: 3em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+	
+	#social #icons a:first-child { margin-left: 5px; }
+	#social #icons a:last-child { margin-right: 0; }
+	
+	#personal { display: none; }
+	#about #aboutme, #about #skillsandbelief { width: 100%; float: none; clear: none; }
+	#about #skillsandbelief { margin-top: 20px; } 
+	#about #ps { font-size: 1.5em; }
+	
+	.project { width: 95%; }
+	.project .desc, .project img { width: 100%; }
+
+}
